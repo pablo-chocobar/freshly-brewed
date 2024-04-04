@@ -34,7 +34,7 @@ const BackgroundAnimation = () => {
             className={`absolute bg-primary w-[380px] h-[380px] rounded-full shadow-primary shadow-2xl backdrop-blur-3xl blur-[350px] ease-in-out transition-all duration-3000 ${blobPosition.blob1}`}
           />
           <div
-            className={` bg-secondary w-[380px] h-[380px] rounded-full shadow-secondary shadow-2xl backdrop-blur-3xl blur-[350px] ease-in-out  transition-all duration-3000 ${blobPosition.blob2}`}
+            className={`bg-secondary w-[380px] h-[380px] rounded-full shadow-secondary shadow-2xl backdrop-blur-3xl blur-[350px] ease-in-out  transition-all duration-3000 ${blobPosition.blob2}`}
           />
         </>
       ) : (

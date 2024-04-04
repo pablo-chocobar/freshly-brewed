@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar'
 import BackgroundAnimation from './components/Background'
+import Header from './components/Header';
 import './App.css'
 
 function App() {
@@ -39,10 +40,15 @@ function App() {
   // }, []);
 
   return (
-    <>
+    <div className='w-full'>
     {/* <Navbar></Navbar> */}
-    <BackgroundAnimation></BackgroundAnimation>
-    </>
+      <div className='relative w-full h-full z-0'>
+        <BackgroundAnimation></BackgroundAnimation>
+      </div>
+      <div className='absolute inset-0 flex justify-center items-center z-20'>
+        <Header subtext = "Exciting things are in the works! We're currently Crafting a new feature for you. Keep an eye out for updates – We're working to make it available soon!"></Header>
+      </div>
+    </div>
   )
 }
 

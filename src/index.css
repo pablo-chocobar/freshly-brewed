@@ -2,19 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 @layer base {
     :root {
         --color-primary: 249 245 215;
-        --color-content: 0 0 0;
+        --color-background: 0 0 0;
         --color-secondary: 164 203 180;
+        --color-content: 255, 255, 255;
     }
 
     :root[data-theme="dark"] {
         --color-primary: 255 0 184;
-        --color-content: 0 0 0;
-        --color-secondary: 119 43 242
+        --color-background: 0 0 0;
+        --color-content: 255, 255, 255;
+        --color-secondary: 119 43 242;
     }
-}
+};
+
+
 
 @keyframes blobAnimation1 {
   0% {
