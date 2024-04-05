@@ -67,7 +67,7 @@ function Form() {
                         value={email}
                         onChange={handleEmailChange}
                         placeholder="Please enter your email id"
-                        className="px-5 py-4 w-80 sm:w-[600px] sm:h-14 border border-solid border-stone-300 text-white font-medium font-poppins bg-transparent rounded-lg"
+                        className="px-5 py-4 w-80 sm:w-[600px] sm:h-14 border border-solid border-stone-300 text-white font-medium font-poppins bg-transparent rounded-lg outline-none focus:outline-none"
                     />
                     {emailError && <p className="text-red-500">{emailError}</p>}
                 </div>
