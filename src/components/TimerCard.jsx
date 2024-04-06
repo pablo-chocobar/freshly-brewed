@@ -18,7 +18,7 @@ function Timer(props) {
             setIsTimerRunning(storedTimerRunning === "true");
         } else {
             setCountDownTime({
-                days: 0,
+                days: props.days,
                 hours: props.hours,
                 minutes: props.minutes,
                 seconds: props.seconds,
