@@ -10,8 +10,8 @@ function Timer(props) {
     const [isTimerRunning, setIsTimerRunning] = useState(false);
 
     useEffect(() => {
-        const storedCountDownTime = sessionStorage.getItem("countDownTime");
-        const storedTimerRunning = sessionStorage.getItem("isTimerRunning");
+        const storedCountDownTime = localStorage.getItem("countDownTime");
+        const storedTimerRunning = localStorage.getItem("isTimerRunning");
 
         if (storedCountDownTime && storedTimerRunning) {
             setCountDownTime(JSON.parse(storedCountDownTime));
@@ -62,8 +62,8 @@ function Timer(props) {
 
         return () => {
             clearInterval(interval);
-            sessionStorage.setItem("countDownTime", JSON.stringify(countDownTime));
-            sessionStorage.setItem("isTimerRunning", isTimerRunning.toString());
+            localStorage.setItem("countDownTime", JSON.stringify(countDownTime));
+            localStorage.setItem("isTimerRunning", isTimerRunning.toString());
         };
     }, [props.hours, props.minutes, props.seconds]);
 
