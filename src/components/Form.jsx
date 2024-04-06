@@ -67,14 +67,14 @@ function Form() {
                         value={email}
                         onChange={handleEmailChange}
                         placeholder="Please enter your email id"
-                        className="px-5 py-4 w-80 sm:w-[600px] sm:h-14 border border-solid border-stone-300 text-white font-medium font-poppins bg-transparent rounded-lg outline-none focus:outline-none"
+                        className="px-5 py-4 w-80 sm:w-[600px] sm:h-14 border border-solid border-content2 text-content1 font-medium font-poppins bg-transparent rounded-lg outline-none focus:outline-none"
                     />
                     {emailError && <p className="text-red-500">{emailError}</p>}
                 </div>
                 {isValidEmail && !isEmailRegistered ? (
                     <button
                         type="button"
-                        className="bg-white text-[#0F0F0F] sm:max-w-max sm:py-3 py-2 px-5 w-full rounded-lg flex items-center justify-center"
+                        className="bg-content0 text-content1 sm:max-w-max sm:py-3 py-2 px-5 w-full rounded-lg flex items-center justify-center"
                         disabled
                     >
                         <svg
@@ -97,9 +97,9 @@ function Form() {
                         type="button"
                         onClick={handleNotifyClick}
                         className={`rounded-lg ${isLoading
-                                ? "bg-gray-500 text-white cursor-not-allowed"
+                                ? "bg-content0 text-background cursor-not-allowed"
                                 : `${!isValidEmail &&
-                                "disabled:cursor-not-allowed disabled:text-gray-400  bg-white text-[#0F0F0F] sm:max-w-max font-poppins text-3xl  leading-8 font-medium px-5 py-3 w-full"}`
+                                "disabled:cursor-not-allowed disabled:text-gray-400  bg-content0 text-background sm:max-w-max font-poppins text-3xl  leading-8 font-medium px-5 py-3 w-full"}`
                             }`}
                         disabled={isLoading || !isEmail}
                     >

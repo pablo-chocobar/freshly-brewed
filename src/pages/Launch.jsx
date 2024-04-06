@@ -12,7 +12,7 @@ function Launch() {
     {hide ?
       <div className='flex flex-col items-center'>
         <Header text="Launching New Module Soon!" subtext1="Exciting things are in the works! We're currently " spantext="Crafting a new feature" subtext2=" for you. Keep an eye out for updates – We're working to make it available soon!" component={<VectorText text="get ready for the reveal!"></VectorText>} ></Header>
-        <Timer hours={0} minutes={0} seconds={31} setHide={setHide}></Timer>
+        <Timer hours={0} minutes={0} seconds={11} setHide={setHide}></Timer>
         <Form></Form>
       </div>
       :
