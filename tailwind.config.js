@@ -21,10 +21,11 @@ export default {
         gradient1: "rgb(var(--color-gradient1) / <alpha-value> )",
         gradient2: "rgb(var(--color-gradient2) / <alpha-value> )",
         cstone: "rgb(var(--color-cstone) / <alpha-value> )",
+        floating: "rgb(var(--color-floating) / <alpha-value> )",
       },
       animation: {
-        'blob1': 'blobAnimation1 6s infinite',
-        'blob2': 'blobAnimation2 6s infinite',
+        'blob1': 'blobAnimation1 18s ease-in-out infinite',
+        'blob2': 'blobAnimation2 18s ease-in-out infinite',
       },
     },
     plugins: [],

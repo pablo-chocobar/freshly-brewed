@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar'
-import BackgroundAnimation from './components/Background'
 import './App.css'
 import Launch from './pages/Launch';
 import { Routes , Route } from 'react-router-dom';
 import Project from './pages/Project';
+import Home from './pages/Home';
 
 
 function App() {
@@ -41,16 +40,14 @@ function App() {
   // }, []);
 
   return (
-    <div className='w-full'>
       <Routes>
-        <Route path = "/" element = {<Launch/>} />
-        <Route path = "/Project" element = {<Project/>} />
+        <Route path = "/" element = {<Home/>} />
+        <Route path = "/launchdark" element = {<Launch theme = "dark"/>} />
+        <Route path = "/launchlight" element = {<Launch theme = "light"/>} />
+        <Route path = "/Projectdark" element = {<Project theme = "dark" />} />
+        <Route path = "/Projectlight" element = {<Project theme = "light" />} />
+
       </Routes>
-      {/* <Navbar></Navbar> */}
-      <div className='relative w-full h-full z-0'>
-        <BackgroundAnimation></BackgroundAnimation>
-      </div>
-    </div>
   )
 }
 

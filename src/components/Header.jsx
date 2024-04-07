@@ -19,7 +19,7 @@ function Header(props) {
         ?
         <div>
           <p className="text-6xl tracking-tight leading-none font-poppins font-semibold">
-          <Rocket screenx = {screenX}></Rocket>
+          <Rocket theme = {props.theme} screenx = {screenX}></Rocket>
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-content1 to-content2'>{props.text}</span>
           </p>
         </div>
@@ -27,7 +27,7 @@ function Header(props) {
         <div className>
           <p className="text-3xl tracking-tight leading-none font-poppins font-semibold">
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-content1 to-content2'>{props.text}</span>
-            <Rocket  screenx = {screenX}></Rocket> 
+            <Rocket theme = {props.theme}  screenx = {screenX}></Rocket> 
           </p>
           
           </div>
