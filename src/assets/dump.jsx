@@ -107,9 +107,17 @@ function Timer(props) {
             </div>
         </div>
     );
+
+    const storedCountDownTime = localStorage.getItem("countDownTime");
+    const storedTimerRunning = localStorage.getItem("isTimerRunning");
+    const storedTargetDate = localStorage.getItem("targetDate");
 };
 export default Timer;
-
+    // if (storedCountDownTime && storedTimerRunning && storedTargetDate) {
+    //   initialCountDownTime = JSON.parse(storedCountDownTime);
+    //   initialTimerRunning = storedTimerRunning === "true";
+    //   initialTargetDate = new Date(storedTargetDate);
+    // } else {
 
     //   useEffect(() => {
     //     const savedTime = sessionStorage.getItem('countDownTime');
